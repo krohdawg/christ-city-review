@@ -703,3 +703,7 @@ p,li,blockquote{text-wrap:pretty}
 .kb .kbm:focus-visible{outline-color:#051A33}
 .kb .kbx .px{color:rgba(5,26,51,.55)}
 .kb .kbx .px:hover{color:#051A33;background:rgba(5,26,51,.08)}
+
+/* v38 register buttons in the church's blue */
+.ev .go{background:#0B427A;border-color:#0B427A;color:#fff}
+.ev .go:hover{background:#fff;color:#0B427A;box-shadow:inset 0 0 0 2px #0B427A}

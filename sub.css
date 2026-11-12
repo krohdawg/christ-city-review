@@ -362,3 +362,27 @@ p,li,blockquote{text-wrap:pretty}
 .kb .kbm:focus-visible{outline-color:#051A33}
 .kb .kbx .px{color:rgba(5,26,51,.55)}
 .kb .kbx .px:hover{color:#051A33;background:rgba(5,26,51,.08)}
+
+/* v38 Coming Up: date tiles you can scan */
+.road{max-width:640px;margin-top:36px}
+.road>li{display:grid;grid-template-columns:84px 1fr;column-gap:24px;align-items:start;border-top:1px solid rgba(5,26,51,.16);padding:24px 0}
+.road>li.big1{border-top:1px solid rgba(5,26,51,.16)}
+.road>li.yr{display:block;border-top:2px solid #0B427A;padding:14px 0 0;font-size:14px;font-weight:800;letter-spacing:.14em;color:#0B427A}
+.road>li.yr+li{border-top:0}
+.road .dt{display:flex;flex-direction:column;align-items:center;justify-content:center;width:84px;height:84px;border:2px solid #0B427A;border-radius:8px;color:#0B427A;line-height:1}
+.road .dt span{font-size:13px;font-weight:800;letter-spacing:.14em}
+.road .dt b{margin-top:6px;font-size:34px;font-weight:800;letter-spacing:-.02em}
+.road h3{margin:2px 0 0;font-size:22px;line-height:1.15}
+.road .t{margin-top:8px;font-size:17px;font-weight:700;color:#051A33}
+.road .where{margin-top:2px;font-size:16px;color:#555}
+.road .d{margin-top:10px;font-size:16px}
+.road .sched{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:6px;font-size:16px}
+.road .sched b{display:inline-block;min-width:60px;color:#0B427A}
+.road .ask{margin-top:18px;max-width:420px}
+.road li.big1 .dt{background:#0B427A;color:#fff}
+.road li.big1 h3{font-size:30px}
+.road .btn,.ev .go{background:#0B427A;border-color:#0B427A;color:#fff}
+.road .btn:hover,.ev .go:hover{background:#fff;color:#0B427A;box-shadow:inset 0 0 0 2px #0B427A}
+@media (max-width:767px){.road>li{grid-template-columns:64px 1fr;column-gap:16px}.road .dt{width:64px;height:64px}.road .dt b{font-size:26px;margin-top:4px}.road .dt span{font-size:11px}.road h3{font-size:19px}.road li.big1 h3{font-size:24px}.road .t{font-size:16px}}
+.road .sched li{display:grid;grid-template-columns:60px 1fr;border:0;padding:0}
+.road .sched b{min-width:0}
