@@ -351,3 +351,14 @@ p,li,blockquote{text-wrap:pretty}
 .ft .fad span,.fw .fad span{display:block}
 @media (min-width:768px){.ft .fad,.fw .fad{grid-template-columns:repeat(3,max-content);column-gap:44px;font-size:15px}}
 @media (max-width:767px){.ft .fad br,.fw .fad br{display:none}.ft .fad,.fw .fad{gap:8px}.ft .fad b,.fw .fad b{margin-bottom:2px}}
+/* v37 Site by KROH popup: light panel, navy type */
+.kb{background:rgba(5,26,51,.38)}
+.kb .kbx,.kb .kbx{background:#fff;color:#051A33;border:0;box-shadow:0 24px 60px rgba(5,26,51,.25)}
+.kb .kbn,.kb .kbx strong{color:#051A33}
+.kb .kbp{color:rgba(5,26,51,.75)}
+.kb .kbx .kbr span{color:rgba(5,26,51,.6)}
+.kb .kbm{background:#051A33;color:#fff}
+.kb .kbm:hover{background:#36557F;color:#fff}
+.kb .kbm:focus-visible{outline-color:#051A33}
+.kb .kbx .px{color:rgba(5,26,51,.55)}
+.kb .kbx .px:hover{color:#051A33;background:rgba(5,26,51,.08)}
