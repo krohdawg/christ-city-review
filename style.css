@@ -685,3 +685,10 @@ p,li,blockquote{text-wrap:pretty}
 .ft .kroh{--py:1005!important}
 }
 @media (max-width:374px),(min-width:431px) and (max-width:767px){.ft .in>.fad{grid-column:1/-1;order:2}}
+
+/* v36 footer address: small label over the value, three columns on wide screens */
+.ft .fad,.fw .fad{gap:12px;line-height:1.45}
+.ft .fad b,.fw .fad b{display:block;min-width:0;margin-bottom:4px;font-size:12px;font-weight:800;letter-spacing:.12em;color:rgba(255,255,255,.6)}
+.ft .fad span,.fw .fad span{display:block}
+@media (min-width:768px){.ft .fad,.fw .fad{grid-template-columns:repeat(3,max-content);column-gap:44px;font-size:15px}}
+@media (max-width:767px){.ft .fad br,.fw .fad br{display:none}.ft .fad,.fw .fad{gap:8px}.ft .fad b,.fw .fad b{margin-bottom:2px}}

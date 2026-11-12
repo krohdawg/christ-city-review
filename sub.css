@@ -344,3 +344,10 @@ p,li,blockquote{text-wrap:pretty}
 .road li.big1{border-top-width:4px}
 @media (max-width:767px){.sb{padding-left:0}.road h3{font-size:21px}.road li.big1 h3{font-size:26px}.sof summary{gap:12px}}
 @media (prefers-reduced-motion:reduce){.sof summary::after{transition:none}}
+
+/* v36 footer address: small label over the value, three columns on wide screens */
+.ft .fad,.fw .fad{gap:12px;line-height:1.45}
+.ft .fad b,.fw .fad b{display:block;min-width:0;margin-bottom:4px;font-size:12px;font-weight:800;letter-spacing:.12em;color:rgba(255,255,255,.6)}
+.ft .fad span,.fw .fad span{display:block}
+@media (min-width:768px){.ft .fad,.fw .fad{grid-template-columns:repeat(3,max-content);column-gap:44px;font-size:15px}}
+@media (max-width:767px){.ft .fad br,.fw .fad br{display:none}.ft .fad,.fw .fad{gap:8px}.ft .fad b,.fw .fad b{margin-bottom:2px}}
